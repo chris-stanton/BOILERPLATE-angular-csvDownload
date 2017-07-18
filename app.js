@@ -6,19 +6,14 @@ var csv = require('express-csv');
 // Serve back static files
 app.use(express.static('public'));
 
-// code from Christian Cupboard Sigma project
-// Angular side
-// https://github.com/jasunde/christian-cupboard/blob/64a5994f42042c9cd147c20eddcf382507b03bb3/public/app/services/distribution.factory.js#L148
-
-// Server side
-// https://github.com/jasunde/christian-cupboard/blob/64a5994f42042c9cd147c20eddcf382507b03bb3/server/routes/distributions.js#L191
-
 app.get('/getcsv', function(req, res) {
-  // this would be your returned find() object
+
+  // Object that is being sent through the app
   var mongoObject = {
     _id: '1234',
-    firstName: 'First',
-    lastName: 'Last'
+    firstName: 'Chris',
+    lastName: 'Stanton',
+    message: 'This works'
   };
 
   // create an array from the mongo object so we can use .unshift() later
@@ -36,24 +31,12 @@ app.get('/getcsv', function(req, res) {
   res.csv(data);
 })
 
-// app.use(function(req, res, next) {
-//   var thing = "hello";
-//   req.message = "hi";
-//   console.log('middleware');
-//   next(thing);
-// });
-//
-// app.use(function(newvar, req, res, next) {
-//   console.log('passed var: ', newvar);
-//   console.log('property on req: ', req.message);
-//   next();
-// });
-
 // Handle index file separately
 app.get('/', function(req, res) {
   res.sendFile(path.resolve('/public/index.html'));
 });
 
+// Port Listening
 app.set('port', process.env.PORT || 5000);
 app.listen(app.get('port'), function() {
     console.log('Listening on port: ', app.get('port'));

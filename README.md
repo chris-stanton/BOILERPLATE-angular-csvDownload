@@ -1,5 +1,12 @@
 # Express-csv Download Template
 
+---
+
+## Description
+  Very basic AngularJS app with a working object to csv download. This app does not require a server but requires a Localhost port.
+
+---
+
 ## Technologies Used
   1. AngularJS
   2. Angular-Route
@@ -8,8 +15,7 @@
   5. express-csv
   6. GIT / GitHub
 
-## Description
-  Very basic AngularJS app with a working object to csv download. This app does not require a server but requires a Localhost port.
+---  
 
 ## How To Install App
   1. Download zip file

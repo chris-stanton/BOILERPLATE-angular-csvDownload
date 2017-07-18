@@ -3,7 +3,7 @@ myApp.controller('HomeController', function($http) {
 
   var self = this;
 
-  self.message = "Welcome to the Home View";
+  self.message = "Sourced and Working";
 
   self.download = function() {
     $http.get('/getcsv').then(function(result) {

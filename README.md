@@ -1,9 +1,10 @@
-# Express-csv Download Template
+
+# Express CSV Download Boilerplate
 
 ---
 
 ## Description
-#####  Very basic AngularJS app with a working object to csv download. This app does not require a server but requires a Localhost port.  When the download button is clicked, the browser downloads a hardcoded JSON object from server-side app.js file and onto the machines harddrive.  
+##### Angular.js app with a working csv download example. When the download button is clicked, the browser downloads a hardcoded JSON object from server-side app.js file and onto the machines hard drive.  
 
 <img src="./public/assets/images/screenshots/screenshot.png" width="50%">  
 

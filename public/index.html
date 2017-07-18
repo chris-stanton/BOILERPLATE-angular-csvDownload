@@ -1,7 +1,7 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <title>Prime Angular Application</title>
+      <title> Angular CSV Download Boilerplate </title>
         <script type="text/javascript" src="/assets/vendors/angular.min.js"></script>
         <script type="text/javascript" src="/assets/vendors/angular-route.min.js"></script>
         <script type="text/javascript" src="/scripts/client.js"></script>
@@ -16,11 +16,7 @@
     </head>
 
     <body ng-app="myApp" ng-controller="HomeController">
-
-      <div class="container">
-        <header ng-include="'/views/templates/nav.html'"></header>
-          <main ng-view></main>
-      </div>
-
+      <header ng-include="'/views/templates/nav.html'"></header>
+        <main ng-view></main>
     </body>
 </html>

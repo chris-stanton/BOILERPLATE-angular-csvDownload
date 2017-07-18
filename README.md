@@ -3,7 +3,9 @@
 ---
 
 ## Description
-  Very basic AngularJS app with a working object to csv download. This app does not require a server but requires a Localhost port.
+  Very basic AngularJS app with a working object to csv download. This app does not require a server but requires a Localhost port.  When the download button is clicked, the browser downloads a hardcoded JSON object from server-side app.js file and onto the machines harddrive.  
+
+<img src="./public/assets/images/screenshots/screenshot.png" width="50%">  
 
 ---
 
